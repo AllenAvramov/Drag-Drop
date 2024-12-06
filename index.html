@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tasks</h1>
+    <div class="columns">
+      <!-- To Do Column -->
+      <div class="column">
+        <div class="column__header">
+          <h2>To Do</h2>
+          <div class="column__actions">
+            <button class="add-task" data-column="tasks--todo">+</button>
+          </div>
+        </div>
+        <div id="tasks--todo" class="task-container"></div>
+      </div>
+
+      <!-- Doing Column -->
+      <div class="column">
+        <div class="column__header">
+          <h2>Doing</h2>
+          <div class="column__actions">
+            <button class="add-task" data-column="tasks--doing">+</button>
+          </div>
+        </div>
+        <div id="tasks--doing" class="task-container"></div>
+      </div>
+
+      <!-- Done Column -->
+      <div class="column">
+        <div class="column__header">
+          <h2>Done</h2>
+          <div class="column__actions">
+            <button class="add-task" data-column="tasks--done">+</button>
+          </div>
+        </div>
+        <div id="tasks--done" class="task-container"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
